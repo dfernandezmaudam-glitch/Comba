@@ -395,23 +395,6 @@
                     </div>
 
                 </div>
-  <div id="visitas" style="text-align:center; margin:2rem; font-size:1.4em">
-  Visitas: <span id="count">0</span>
-</div>
-
-<script>
-  let count = parseInt(localStorage.getItem("visitas") || "0");
-  
-  // Incrementa solo si es una visita nueva (simple aproximación)
-  if (!sessionStorage.getItem("yaContado")) {
-    count++;
-    localStorage.setItem("visitas", count);
-    sessionStorage.setItem("yaContado", "true");
-  }
-
-  document.getElementById("count").textContent = count.toLocaleString("es-AR");
-</script>              
-
             </header>
 
             <section class="calc-section">
